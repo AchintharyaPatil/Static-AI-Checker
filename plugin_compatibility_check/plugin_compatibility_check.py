@@ -91,7 +91,7 @@ def check_compatibility(plugins):
 
 def main():
     """Main function to load plugins and check for compatibility issues."""
-    plugins = load_json("gstreamer_caps.json")
+    plugins = load_json("plugin_compatibility_check/gstreamer_caps.json")
     issues = check_compatibility(plugins)
 
     if issues:
